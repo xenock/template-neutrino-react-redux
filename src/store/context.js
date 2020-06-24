@@ -1,4 +1,5 @@
 import React, { useReducer, createContext } from 'react'
+import PropTypes from 'prop-types'
 
 export const CounterContext = createContext()
 
@@ -29,4 +30,8 @@ export const StateProvider = props => {
       {props.children}
     </CounterContext.Provider>
   )
+}
+
+StateProvider.propTypes = {
+  children: PropTypes.element,
 }
