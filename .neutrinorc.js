@@ -11,6 +11,7 @@ module.exports = {
       eslint: {
         rules: {
           'comma-dangle': ["error", "always-multiline"],
+          'react/prop-types': 0,
         }
       }
     }),
